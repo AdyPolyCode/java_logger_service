@@ -44,11 +44,11 @@ public abstract class StormLogger<T> extends Logger {
      * runtime access.
      *
      * @return T subclass
-     * @throws RuntimeException
+     * @throws RuntimeException Exception that forces implementation
      */
     public static <T> T getInstance() throws RuntimeException {
         throw new RuntimeException("Must provide a concrete implementation.");
-    };
+    }
 
     /**
      * This might throw an Illegal Pattern exception in case a wrong one is provided.
